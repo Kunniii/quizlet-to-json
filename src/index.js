@@ -34,6 +34,8 @@ app.post('/', (req, res) => {
         data: questions
       }
       res.json(responseData);
+    }).catch(err => {
+      res.json({status: "Error", message: err.message});
     });
   }
 });
