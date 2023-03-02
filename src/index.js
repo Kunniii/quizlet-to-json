@@ -30,6 +30,7 @@ app.post('/', (req, res) => {
       }
       let numberOfQuestions = questions.length;
       let responseData = {
+        status: "OK",
         total: numberOfQuestions,
         data: questions
       }
