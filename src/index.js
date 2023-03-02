@@ -38,6 +38,10 @@ app.post('/', (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.json({message: 'Please POST with {"url" : "...."}'});
+})
+
 app.listen(PORT, (err) => {
   if (err) {
     clog(err.message);
